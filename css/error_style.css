@@ -1,0 +1,73 @@
+
+   
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-family: 'Cabin', sans-serif;
+
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        background-color: #21c08d;
+    }
+    .header--img{
+        width: 200px;
+        margin-left: 10px;
+    }
+ 
+    .animated {
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+      }
+    @keyframes pulse {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.1);}
+        100% {transform: scale(1);}
+      }
+      .section__error {
+        
+        background: linear-gradient(#21c08d,#8f57fd);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+   
+        min-height: calc(100vh - 200px);
+
+      }
+    .section__error .error--name{
+        animation-name: pulse;
+        animation-duration: 1s;
+        font-size: 200px;
+        color: white;
+    }
+    .section__error .error--detail{
+        color: white;
+        font-size: 30px;
+    }
+   
+.footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #8f57fd;
+}
+.footer a{
+ color: white;
+ cursor: pointer;
+ font-size: 14px;
+ padding-left: 30px;
+ text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
